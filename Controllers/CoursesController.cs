@@ -77,7 +77,6 @@ public class CoursesController : ControllerBase
         if (!ModelState.IsValid)
             return BadRequest(ModelState);
 
-        // Mapear DTO a la clase de dominio `Enrollment`
         var enrollment = _mapper.Map<Enrollment>(enrollRequest);
         enrollment.EnrollmentDate = DateTime.UtcNow;
         string formattedDate = enrollment.EnrollmentDate.ToString("yyyy-MM-dd");

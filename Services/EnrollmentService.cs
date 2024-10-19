@@ -9,12 +9,10 @@ namespace ACME_Api.Services
     public class EnrollmentService : IEnrollmentService
     {
         private readonly MockDatabase _mockDatabase;
-        private readonly EnrollmentValidator _enrollmentValidator;
 
-        public EnrollmentService(MockDatabase mockDatabase, EnrollmentValidator enrollmentValidator)
+        public EnrollmentService(MockDatabase mockDatabase)
         {
             _mockDatabase = mockDatabase;
-            _enrollmentValidator = enrollmentValidator;
         }
 
         public async Task EnrollStudentInCourse(Enrollment enrollment)
@@ -37,11 +35,7 @@ namespace ACME_Api.Services
 
                 if (!isPaymentValid)
                     throw new InvalidOperationException("Validación de pago falló. No se pudo inscribir al estudiante.");
-            }
-
-            int lastId = data.Enrollments.Any() ? data.Enrollments.Max(e => e.Id) : 0;
-            enrollment.Id = lastId + 1;
-            enrollment.IsPaymentComplete = true;
+            }           
 
             await _mockDatabase.SaveDataEnrollmentAsync(enrollment);
         }

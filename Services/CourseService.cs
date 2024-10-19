@@ -12,14 +12,12 @@ namespace ACME_Api.Services
         private readonly MockDatabase _mockDatabase;
         private readonly IStudentService _studentService;
         private readonly IEnrollmentService _enrollmentService;
-        private readonly EnrollmentValidator _enrollmentValidator;
 
-        public CourseService(IStudentService studentService, MockDatabase mockDatabase, IEnrollmentService enrollmentService, EnrollmentValidator enrollmentValidator)
+        public CourseService(IStudentService studentService, MockDatabase mockDatabase, IEnrollmentService enrollmentService)
         {
             _mockDatabase = mockDatabase;
             _studentService = studentService;
             _enrollmentService = enrollmentService;
-            _enrollmentValidator = enrollmentValidator;
         }
 
         public async Task CreateCourse(Course course)
