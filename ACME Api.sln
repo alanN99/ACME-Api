@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35208.52
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ACME Api", "ACME Api.csproj", "{930A3BCA-0E64-40A5-A886-21D0DBF096B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentEnrollment.Tests", "..\StudentEnrollment.Tests\StudentEnrollment.Tests.csproj", "{C8227C38-9A55-47B4-B10A-0128F53A7F06}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{930A3BCA-0E64-40A5-A886-21D0DBF096B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{930A3BCA-0E64-40A5-A886-21D0DBF096B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{930A3BCA-0E64-40A5-A886-21D0DBF096B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{930A3BCA-0E64-40A5-A886-21D0DBF096B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8227C38-9A55-47B4-B10A-0128F53A7F06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8227C38-9A55-47B4-B10A-0128F53A7F06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8227C38-9A55-47B4-B10A-0128F53A7F06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8227C38-9A55-47B4-B10A-0128F53A7F06}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DA91A318-0E58-436F-BD7A-D3E24ACC17B7}
+	EndGlobalSection
+EndGlobal

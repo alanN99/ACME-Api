@@ -1,0 +1,96 @@
+{
+  "Students": [
+    {
+      "Id": 1,
+      "Name": "Nicolas Garcia",
+      "Age": 28,
+      "IsAdult": true
+    },
+    {
+      "Id": 2,
+      "Name": "Jane Smith",
+      "Age": 20,
+      "IsAdult": true
+    },
+    {
+      "Id": 3,
+      "Name": "Alan Nanni",
+      "Age": 31,
+      "IsAdult": true
+    },
+    {
+      "Id": 4,
+      "Name": "Juan Manuel Nanni",
+      "Age": 28,
+      "IsAdult": true
+    }
+  ],
+  "Courses": [
+    {
+      "Id": 1,
+      "Name": "Curso de Programaci\u00F3n",
+      "RegistrationFee": 100,
+      "StartDate": "2024-10-21T00:00:00",
+      "EndDate": "2024-12-20T00:00:00"
+    },
+    {
+      "Id": 2,
+      "Name": "Curso de Matem\u00E1ticas",
+      "RegistrationFee": 150,
+      "StartDate": "2024-11-01T00:00:00",
+      "EndDate": "2024-12-15T00:00:00"
+    },
+    {
+      "Id": 3,
+      "Name": "Curso Principios SOLID",
+      "RegistrationFee": 150000,
+      "StartDate": "2024-10-16T00:00:00",
+      "EndDate": "2024-11-20T00:00:00"
+    },
+    {
+      "Id": 4,
+      "Name": "Curso Unit Test",
+      "RegistrationFee": 150000,
+      "StartDate": "2025-03-03T00:00:00",
+      "EndDate": "2025-06-27T00:00:00"
+    }
+  ],
+  "Enrollments": [
+    {
+      "Id": 1,
+      "StudentId": 1,
+      "CourseId": 1,
+      "EnrollmentDate": "2024-10-21T00:00:00",
+      "IsPaymentComplete": true,
+      "PaymentToken": null,
+      "PaymentAmount": 0
+    },
+    {
+      "Id": 2,
+      "StudentId": 2,
+      "CourseId": 2,
+      "EnrollmentDate": "2024-11-01T00:00:00",
+      "IsPaymentComplete": false,
+      "PaymentToken": null,
+      "PaymentAmount": 0
+    },
+    {
+      "Id": 3,
+      "StudentId": 2,
+      "CourseId": 1,
+      "EnrollmentDate": "2024-10-17T11:21:51.412294-03:00",
+      "IsPaymentComplete": true,
+      "PaymentToken": "string",
+      "PaymentAmount": 100
+    },
+    {
+      "Id": 4,
+      "StudentId": 4,
+      "CourseId": 4,
+      "EnrollmentDate": "2024-10-19T15:18:25.6746634Z",
+      "IsPaymentComplete": true,
+      "PaymentToken": "string",
+      "PaymentAmount": 150000
+    }
+  ]
+}
