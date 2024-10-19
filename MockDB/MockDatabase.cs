@@ -67,6 +67,10 @@ namespace ACME_Api.MockDB
         {
             MockDBModel mockData = await LoadDataAsync(); // Carga los datos existentes
 
+            int lastId = mockData.Enrollments.Any() ? mockData.Enrollments.Max(e => e.Id) : 0;
+            enrollment.Id = lastId + 1;
+            enrollment.IsPaymentComplete = true;
+
             // Añadir la nueva inscripción a la lista de inscripciones
             mockData.Enrollments.Add(enrollment);
 
