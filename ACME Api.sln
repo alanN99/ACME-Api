@@ -5,7 +5,9 @@ VisualStudioVersion = 17.11.35208.52
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ACME Api", "ACME Api.csproj", "{930A3BCA-0E64-40A5-A886-21D0DBF096B9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentEnrollment.Tests", "..\StudentEnrollment.Tests\StudentEnrollment.Tests.csproj", "{C8227C38-9A55-47B4-B10A-0128F53A7F06}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StudentEnrollment.Tests", "..\StudentEnrollment.Tests\StudentEnrollment.Tests.csproj", "{C8227C38-9A55-47B4-B10A-0128F53A7F06}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FF0DAAAE-EA72-4A12-93C6-61C162AA0FF1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
